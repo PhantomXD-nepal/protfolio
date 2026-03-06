@@ -50,7 +50,6 @@ function TechCard({ tech }) {
                 </div>
             </div>
 
-            {/* Corner accent */}
             <div className="bento-corner" style={{ background: `linear-gradient(135deg, ${tech.accent}40, transparent 60%)` }} />
         </motion.div>
     )
