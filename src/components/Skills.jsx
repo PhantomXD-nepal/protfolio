@@ -26,7 +26,6 @@ function TechCard({ tech }) {
             className={`bento-card ${isLarge ? 'bento-large' : ''} ${isWide ? 'bento-wide' : ''}`}
             style={{ '--accent': tech.accent }}
         >
-            {/* Glow blob */}
             <div className="bento-glow" style={{ background: `radial-gradient(circle at 30% 30%, ${tech.accent}22 0%, transparent 65%)` }} />
 
             <div className="bento-content">
