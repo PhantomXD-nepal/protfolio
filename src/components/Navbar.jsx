@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const navLinks = ['HOME', 'SKILLS', 'SERVICES', 'CONTACT']
+const navLinks = ['HOME', 'SKILLS', 'SERVICES', 'PROJECTS', 'CONTACT']
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)

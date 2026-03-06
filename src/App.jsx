@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Services from './components/Services'
+import Projects from './components/Projects'
 import Contact from './components/Contact'
 import BrandStrip from './components/BrandStrip'
 
@@ -36,6 +37,10 @@ function App() {
 
                 <div className="section-gap mt-4">
                     <Services />
+                </div>
+
+                <div className="section-gap mt-4">
+                    <Projects />
                 </div>
 
                 <div className="section-gap mt-10">

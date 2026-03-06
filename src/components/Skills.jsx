@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { SKILLS, TECH_STACK } from '../constants'
 
 const containerVariants = {

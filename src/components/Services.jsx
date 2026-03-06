@@ -14,6 +14,13 @@ const services = [
         description: 'Building robust, scalable, and secure custom backends tailored to your needs using modern frameworks and databases.',
         tech: ['Golang', 'Express', 'PostgreSQL', 'PocketBase'],
         accent: '#22c55e' // green
+    },
+    {
+        id: 'mobile',
+        title: 'Custom Mobile Apps',
+        description: 'Developing native and cross-platform mobile applications with seamless user experiences and robust functionality.',
+        tech: ['React Native', 'Expo'],
+        accent: '#FF4D12' // red
     }
 ]
 
@@ -38,7 +45,7 @@ export default function Services() {
         <section id="services" className="relative w-full py-24 px-6 md:px-10 lg:px-16 overflow-hidden">
             <div className="max-w-[1600px] mx-auto">
                 {/* Header */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
@@ -54,7 +61,7 @@ export default function Services() {
                 </motion.div>
 
                 {/* Services Grid */}
-                <motion.div 
+                <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="show"
@@ -62,8 +69,8 @@ export default function Services() {
                     className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10"
                 >
                     {services.map((service) => (
-                        <motion.div 
-                            key={service.id} 
+                        <motion.div
+                            key={service.id}
                             variants={itemVariants}
                             className="relative bento-card flex flex-col justify-between h-full p-8 lg:p-12 group"
                             style={{ '--accent': service.accent }}
@@ -83,15 +90,15 @@ export default function Services() {
                             {/* Tech Stack Pills */}
                             <div className="relative z-10 flex flex-wrap gap-3 mt-auto">
                                 {service.tech.map((tech) => (
-                                    <span 
-                                        key={tech} 
+                                    <span
+                                        key={tech}
                                         className="text-xs font-medium tracking-wide px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70"
                                     >
                                         {tech}
                                     </span>
                                 ))}
                             </div>
-                            
+
                             {/* Corner accent */}
                             <div className="bento-corner" style={{ background: `linear-gradient(135deg, ${service.accent}40, transparent 60%)` }} />
                         </motion.div>
