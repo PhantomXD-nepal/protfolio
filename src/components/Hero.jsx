@@ -20,32 +20,12 @@ const itemVariants = {
 export default function Hero() {
     return (
         <section id="home" className="relative min-h-[90vh] w-full flex flex-col items-center justify-center px-6 text-center pt-40 pb-32 overflow-hidden">
-
-            {/* ── Ambient purple glow ── */}
-            <div className="hero-glow-orb hero-glow-orb--top" />
-            <div className="hero-glow-orb hero-glow-orb--bottom" />
-
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 animate="show"
-                className="flex flex-col items-center z-10"
+                className="max-w-3xl flex flex-col items-center gap-6"
             >
-                {/* ── Avatar ── */}
-                <motion.div variants={itemVariants} className="relative mb-6">
-                    <div className="hero-avatar-ring">
-                        <div className="hero-avatar">
-                            <span className="hero-avatar-initials">{HERO.avatarInitials}</span>
-                        </div>
-                    </div>
-                    {/* Online dot */}
-                    <span className="hero-status-dot" title="Available for hire" />
-                </motion.div>
-
-                {/* ── Greeting ── */}
-                <motion.p variants={itemVariants} className="hero-greeting">
-                    {HERO.greeting}
-                </motion.p>
 
                 {/* ── Main Headline ── */}
                 <motion.h1 variants={itemVariants} className="hero-headline">

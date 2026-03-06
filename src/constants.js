@@ -1,11 +1,11 @@
+
 // ── Hero Section ──────────────────────────────────────────────
 export const HERO = {
-  // avatarInitials: 'AR',
-  greeting: 'Hi, I\'m Ansu 👋',
   headlineParts: [
-    { text: 'Building digital\n' },
-    { text: 'products, brands,\nand ' },
-    { text: 'experience.', accent: true },
+    { text: 'Hi👋 I am Ansu\n' },
+    { text: 'Based in Nepal,\n ' },
+    { text: 'a 15 year old ', accent: true },
+
   ],
   taglinePart1: 'a Backend Developer',
   taglinePart2: 'and Full-Stack Builder.',
@@ -98,6 +98,7 @@ export const CONTACT = {
   discord: 'https://discord.com/users/rip_phantom8835',   // ← replace with your Discord user link
   instagram: 'https://www.instagram.com/akrishnarijal/',       // ← replace with your Instagram handle
   email: 'arcanepog@gmail.com',                               // ← replace with your email
+
 
   // Right pane — form
   formTitle: 'Contact Me',
