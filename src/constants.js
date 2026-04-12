@@ -142,5 +142,33 @@ export const PROJECTS = [
         tech: ['NestJS', 'SQLite', 'Redis Cache', 'Socket.io']
       }
     ]
-  }
+  },
+  {
+  "id": "codequest",
+  "title": "CodeQuest[ALPHA]",
+  "description": "An immersive, game-based learning platform empowering the next generation of digital creators in Nepal through interactive coding quests and real-time feedback.",
+  "link": "https://codequest-phi-black.vercel.app/",
+  "accent": "#39FF14",
+  "tags": ["Next.js 15", "Framer Motion", "GSAP", "Drizzle ORM", "Gemini AI", "Pyodide"],
+  "tabs": [
+    {
+      "id": "learning",
+      "label": "Learning Engine",
+      "content": "A custom-built interactive lesson runner featuring in-browser code execution via Pyodide, real-time output validation, and a dynamic Monaco-based editor environment that adapts to the student's progress.",
+      "tech": ["Pyodide", "Monaco Editor", "React", "Tailwind CSS"]
+    },
+    {
+      "id": "frontend",
+      "label": "Frontend",
+      "content": "A highly polished, responsive UI featuring fluid animations with GSAP and Framer Motion, smooth scrolling via Lenis, and a bento-grid inspired dashboard for tracking quests and achievements.",
+      "tech": ["Next.js", "Framer Motion", "GSAP", "Lenis", "Lucide Icons"]
+    },
+    {
+      "id": "backend",
+      "label": "Backend & AI",
+      "content": "Powered by Next.js Server Actions and Drizzle ORM for robust data management. Integrates Gemini AI for automated lesson generation and Better-Auth for secure student profiles and progress tracking.",
+      "tech": ["Better-Auth", "Drizzle ORM", "Gemini API", "SQLite"]
+    }
+  ]
+}
 ]
